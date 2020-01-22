@@ -31,36 +31,36 @@ public class SecondTaskValidationPassword {
 		// creating boolean value and assign the false by default
 		boolean result = false;
 
-		// creating int whic will count how many requirements were passed.
+		// creating int which will count how many requirements were passed.
 		int count = 0;
 
 		// create the if statement where we check does have a space our password
 		if (password.contains(" ")) {
 
 			// if true , return result (by default its false already)
-			// and our method will not continue running the code after that. No sense? that
+			// and our method will not continue running the code after that. No sense, that
 			// its already false.
 			return result;
 
 			// if first statement was false (that means that password doesnt have spaces)
-			// check the length of password? if its less the 6, same return result (false by
+			// check the length of password, if its less the 6, same return result (false by
 			// default)
 		} else if (password.length() < 6) {
 			return result;
 		}
 
-		// if code comes to that line that mean that previous to statements were false,
+		// if code comes to that line that mean that previous two if statements were false,
 		// that means that 2 first requirements passed
-		// adding 2 to our count variable
+		// adding 2 to our int count variable
 		count += 2;
 
-		// Creating the array and use the method toCharArraym i converting the main
+		// Creating the array and use the method toCharArray to converting the main
 		// string to char array. Why?
 		char[] passWord = password.toCharArray();
 
 		// Because i will compare digits from string with digits from int,and i can use
 		// parseInt method,
-		// but i decided that way. Here as example ? what should i type if i want to
+		// but i decided that way. Here as example: what should i type if i want to
 		// check text(string) and digit(int)
 
 		String a = "1";
@@ -71,19 +71,19 @@ public class SecondTaskValidationPassword {
 //    	System.out.println(b.equals(a));
 //    	System.out.println(a.equals(b));// false, should be true
 
-		// creating a String with value of almost all or all specific characters
+		// creating a String with value of almost all or almost all specific characters
 		String sc = "@#$%!^&*()_-=+/|{}[]'~`;:,.\";";
 
 		// converting this string with special characters into char array
 		char[] SC = sc.toCharArray();
 
-		// create the for loop, and check, does have a at least one digit our password.
-		// Why i using char as initializer , because our string was converted char
+		// create the for loop, and check, does have at least one digit our password.
+		// Why i using char as initializer , because our string was converted into char
 		// array.
 		for (char i = '0'; i <= '9'; i++) {
 
 			// then inside a loop creating another one, and as a condition take
-			// length of char array where we saved all characters from main string
+			// length of char array where we saved all value from main string
 			for (int j = 0; j < passWord.length; j++) {
 
 				// Creating the if statement inside that loop, and check that
@@ -98,8 +98,8 @@ public class SecondTaskValidationPassword {
 					break;
 				}
 
-				// then check the value of count, it must be equals to count of passes
-				// paragraphs.
+				// then check the value of count variable, it must be equals to count of passed
+				// requirements.
 				// we still need exit from current loop
 				if (count == 3) {
 
@@ -113,13 +113,13 @@ public class SecondTaskValidationPassword {
 		// it must be equals to count of passed requirements.
 		if (count == 3) {
 
-			// create the for loop, and check, does have a at least one lower case letter
-			// our password.
-			// the condition we can use a last letter of the alphabet
+			// create the for loop, and check, does have at least one lower case letter
+			// in our password.
+			// the initializer we can use first letter of alphabet 'a' condition we can use a last letter of the alphabet 'z'
 			for (char l = 'a'; l < 'z'; l++) {
 
-				// inside a loop creating another one, and as a condition take
-				// length of char array where we saved all characters from main string
+				// inside the loop creating another one, and as a condition take
+				// length of char array where we saved all values from main string
 				for (int i = 0; i < passWord.length; i++) {
 
 					// Creating the if statement inside that loop, and check that
@@ -130,17 +130,17 @@ public class SecondTaskValidationPassword {
 						// if its pass , increase value of count variable on 1;
 						count++;
 
-						// then exit from the loop, because that condition already pass
+						// then exit from the loop, because that requirements already pass
 						break;
 					}
 				}
 
-				// then check the value of count, it must be equals to count of passes
+				// then check the value of count, it must be equals to count of passed
 				// requirements.
 				// and we still need to exit from current loop
 				if (count == 4) {
 
-					// if its passes, exit current another loop
+					// if its passes, exit from current loop
 					break;
 				}
 			}
@@ -148,7 +148,7 @@ public class SecondTaskValidationPassword {
 			// here , if our first if statement, before the for loop, which check the count
 			// of passed requirements will be false
 			// we go under else statement and exit from the method, Java will stop runs the
-			// code
+			// code cause previous requirement did not pass
 		} else {
 			return result = false;
 		}
@@ -157,13 +157,13 @@ public class SecondTaskValidationPassword {
 		// it must be equals to count of passed requirements.
 		if (count == 4) {
 
-			// create the for loop, and check, does have a at least one upper case letter
+			// create the for loop, and check, does have at least one upper case letter
 			// our password.
-			// the condition we can use a last letter of the alphabet
+			// the initializer we can use first letter of alphabet 'A' condition we can use a last letter of the alphabet 'Z'
 			for (char U = 'A'; U <= 'Z'; U++) {
 
 				// inside a loop creating another one, and as a condition take
-				// length of char array where we saved all characters from main string
+				// length of char array where we saved all value from main string
 				for (int i = 0; i < passWord.length; i++) {
 
 					// Creating the if statement inside that loop, and check that
@@ -173,7 +173,7 @@ public class SecondTaskValidationPassword {
 						// if its pass , increase value of count variable on 1;
 						count++;
 
-						// then exit from the loop, because that condition already pass
+						// then exit from the loop, because that needed requirement already passed
 						break;
 					}
 				}
@@ -183,7 +183,7 @@ public class SecondTaskValidationPassword {
 				// and we still need to exit from current loop
 				if (count == 5) {
 
-					// if its passes, exit current another loop
+					// if its passes, exit from current loop
 					break;
 				}
 			}
@@ -192,7 +192,7 @@ public class SecondTaskValidationPassword {
 		// here , if our first if statement, before the for loop, which check the count
 		// of passed requirements will be false
 		// we go under else statement and exit from the method, Java will stop runs the
-		// code
+		// code cause previous requirement did not pass
 		else {
 			return result = false;
 		}
@@ -207,7 +207,7 @@ public class SecondTaskValidationPassword {
 			for (int s = 0; s < SC.length; s++) {
 
 				// inside a loop creating another one, and as a condition take
-				// length of char array where we saved all characters from main string
+				// length of char array where we saved all value from main string
 				for (int i = 0; i < passWord.length; i++) {
 
 					// Creating the if statement inside that loop, and check that
@@ -218,7 +218,7 @@ public class SecondTaskValidationPassword {
 						// if its pass , increase value of count variable on 1;
 						count++;
 
-						// then exit from the loop, because that condition already pass
+						// then exit from the loop, because needed requirement already passed
 						break;
 					}
 				}
@@ -227,7 +227,7 @@ public class SecondTaskValidationPassword {
 				// requirements.
 				// and we still need to exit from current loop
 				if (count == 6) {
-					// then assign to boolean variable truem because that last checked requirement.
+					// then assign to boolean variable true because that last checked requirement.
 					result = true;
 
 					// exit from current loop
@@ -240,7 +240,7 @@ public class SecondTaskValidationPassword {
 		// here , if our first if statement, before the for loop, which check the count
 		// of passed requirements will be false
 		// we go under else statement and exit from the method, Java will stop runs the
-		// code
+		// code cause previous requirement did not pass
 		else {
 			return result = false;
 		}
@@ -248,7 +248,7 @@ public class SecondTaskValidationPassword {
 		// if we are came to that line, that means that our requirements were passed and
 		// last if statement
 		// changed the value of our boolean variable from false to true. Returning
-		// boolean value we are returning true
+		// boolean variable we are returning true value
 		return result;
 	}
 
