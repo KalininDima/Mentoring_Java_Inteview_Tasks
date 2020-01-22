@@ -4,6 +4,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class FifthTaskReverseButNotTouchSpaces {
+	
+	/*
+	 * The task is mean that we nned reverse the string but keep the spaces on the same indexes in new String
+	 * EX: 	 D  i ma
+	 * Need: a  m iD
+	 * Not:  am i  D
+	 */
 	public static void ReverseNotTouchSpaces(String str) {
 
 		//create the Array list with Integer data
