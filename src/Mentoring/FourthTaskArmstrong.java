@@ -14,23 +14,23 @@ public class FourthTaskArmstrong {
 	//create the method with int parameters
 	public static void ArmstrongFormula(int Armstrong) {
 		
-		//assign the armstrong value to String
+		//assign the armstrong value to String str
 		String str = "" + Armstrong;
 		
-		//create int result, we will save the our result
+		//create int result, we will save there our results
 		int result = 0;
 		
 		//Split the string which has a value of Armstrong to String Array
 		String[] splited = str.split("");
 		
-		//Create the int Array with size of string where we saved value of Armstrong
+		//Create the int Array with size of string str (where we saved value of Armstrong)
 		int[] i = new int[str.length()];
 
 		//creating for loop with condition j less the length of str String
 		for (int j = 0; j < str.length(); j++) {
 			
-			//then we are taking int array and assign to each index of that array, each index from string array, 
-			//to converting from string to int helps us to converting string to int by parseInt method. that Un-boxing.
+			//then we are taking int array and assign to value each index of that array, value each index from string array, 
+			//To help us with that (converting from string to int) that parseInt method. Thi is call Un-boxing.
 			i[j] = Integer.parseInt(splited[j]);
 		}
 
@@ -40,7 +40,8 @@ public class FourthTaskArmstrong {
 		//create for each int loop using int array
 		for (int each : i) {
 			
-			//addition to int variable methematic result, each - its value of each index our int array
+			//addition to int result variable, methematic results, each - its value of each index our int array
+			//so, we do multiplication 3 times (because the we need value of cube)
 			result += each * each * each;
 			
 			//printing result of 3 times multiplication

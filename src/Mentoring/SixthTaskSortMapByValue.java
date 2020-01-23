@@ -1,6 +1,7 @@
 package Mentoring;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -9,11 +10,29 @@ import java.util.Map;
 public class SixthTaskSortMapByValue {
 	public static void main(String[] args) {
 
+		
+		int [] i = new int[] {0,0,8,0,5,9,2};
+		
+		int [] R = new int[i.length];
+		int y=0;
+		for (int j =0;j<R.length;j++) {
+			
+			if (i[j]!=0) {
+				R[y]=i[j];
+				y++;
+			
+			
+			}
+		}
+		
+		System.out.println(Arrays.toString(R));
+		System.out.println("========================");
 		/*
 		 * How can we sort Map by value .
 		 */
 
 		// Create the MAP data structure , call constructor from HashMap Class.
+		//Data type: Key - Integer, Value - String
 		Map<Integer, String> map = new HashMap<Integer, String>();
 
 		// Adding keys and values by using put method, map.put(key, valueOfThatKey)
@@ -36,7 +55,7 @@ public class SixthTaskSortMapByValue {
 		// and returning the all keys from our map
 		for (Integer each : map.keySet()) {
 
-			// Then we are adding the value of each key to the list by using map.get(each)
+			// Then we are adding the value of each key to the list by using map.get(each) method
 			// each - its key
 			// map.get(each) - returns value of the key
 			listN.add(map.get(each));

@@ -32,7 +32,7 @@ public class ThirdTaskFrequencyCharacters {
 
 			}
 			
-			//when our second loop is finished and we are returning to first for loop, where we creating if statement
+			//when our second loop is finished and we are returning to first loop, where we creating if statement
 			//and then we check our string variable U, doesnt have the letter which we checked before in our second loop.
 			//if its true go inside.
 			if (!U.contains("" + str.charAt(i))) {
@@ -43,7 +43,7 @@ public class ThirdTaskFrequencyCharacters {
 			}
 			
 			//Then we need assign zero to count variable, because we will take second 
-			//letter and check how many times we will me it in the String str. If we found assign zero, 
+			//letter and check how many times we will meet it in the String str. If we wount assign a zero, 
 			//that means that to results of previous letter will be adding results of new letter
 			//EX:if letter A meets 2 times and then we check letter B which we meet 1 time, total value of count will be 3, but we needed 1.
 			count = 0;
@@ -64,8 +64,9 @@ public class ThirdTaskFrequencyCharacters {
 
 		//we are creating for each loop as Character object and converting main string into char array(use toCharArray method))
 		for (Character each : str.toCharArray()) {
-			//creating if statement with folowing condtion:
-			//we will take a key (character) and does it contain value of each(remind? each has EACH value from main string str)
+			
+			//creating if statement with following condition:
+			//we will take a key (character) and check does it contain value of each(remind each has EACH value from main string str)
 			if (M.containsKey(each)) {
 				
 				//then we will use an each as KEY, and add(put command) to that KEY VALUE +1, and VALUE we are taking from that KEY M.get(each) 
@@ -76,7 +77,7 @@ public class ThirdTaskFrequencyCharacters {
 			} else {
 				
 				//if MAP doesnt have the key (which each) we are adding that KEY 
-				//and assigning value to that KEY 1, because at this moment we first time when we meet that KEY
+				//and assigning value to that KEY 1, because at this moment we first time meet that KEY
 				M.put(each, 1);
 			}
 

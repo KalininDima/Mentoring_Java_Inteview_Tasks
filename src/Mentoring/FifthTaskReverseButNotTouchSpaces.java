@@ -20,10 +20,10 @@ public class FifthTaskReverseButNotTouchSpaces {
 		
 		for (int i = 0; i < str.length() - 1; i++) {
 			
-			//create if statement and check that if one of the index equal space, go inside
+			//create if statement and check that if one of the value of the index equal space, go inside
 			if ((""+str.charAt(i)).equals(" ")) {
 				
-				//And save into the list that index which have space from main String str
+				//And save into the list the index which have space from main String str
 				listofspaces.add(i);
 			}
 		}
@@ -36,7 +36,7 @@ public class FifthTaskReverseButNotTouchSpaces {
 		
 		//Create for loop with int i as initializer where value is length of main String str -1
 		//and condition i must be high or equal zero, and iterator i--, 
-		//that means that we are going from end of the value to the begigining
+		//that means that we are going from end of the value to the beginning
 		for (int i = str.length() - 1; i >= 0; i--) {
 			
 			//Create inside that loop another one, initializer int l will be 0, condition l should be less then length of 
@@ -72,9 +72,13 @@ public class FifthTaskReverseButNotTouchSpaces {
 		
 	}
 	public static void main(String[] args) {
-	
+		// the String with value
 		String str = "Tomorow    is   in  your handes";
+		
+		//called method where we put String str
 		ReverseNotTouchSpaces(str);
+		
+		//How should be the result
 		System.out.println("How should be:");
 		System.out.println("sednahr    uo   yn  isiw oromoT");
 	}
