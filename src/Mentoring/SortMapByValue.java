@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class SixthTaskSortMapByValue {
+public class SortMapByValue {
 	public static void main(String[] args) {
 
 		

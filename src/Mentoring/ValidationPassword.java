@@ -1,6 +1,6 @@
 package Mentoring;
 
-public class SecondTaskValidationPassword {
+public class ValidationPassword {
 	/*
 	 * 1. Write a return method that can verify if a password is valid or not.
 	 * 

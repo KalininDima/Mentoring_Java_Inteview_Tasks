@@ -3,7 +3,7 @@ package Mentoring;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class ThirdTaskFrequencyCharacters {
+public class FrequencyCharacters {
 
 	// First way:
 	//create the method with String parameters

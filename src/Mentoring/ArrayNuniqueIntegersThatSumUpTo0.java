@@ -2,7 +2,7 @@ package Mentoring;
 
 import java.util.Arrays;
 
-public class FirstTaskArrayNuniqueIntegersThatSumUpTo0 {
+public class ArrayNuniqueIntegersThatSumUpTo0 {
 
 	/*
 	 * Write a function:

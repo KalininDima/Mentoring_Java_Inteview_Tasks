@@ -1,6 +1,6 @@
 package Mentoring;
 
-public class SeventhTaskPolindrome {
+public class Polindrome {
 	public static boolean PolindromeMethod(String str) {
 		
 		//crate boolean variable with false value

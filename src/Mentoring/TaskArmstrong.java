@@ -2,7 +2,7 @@ package Mentoring;
 
 import java.util.Arrays;
 
-public class FourthTaskArmstrong {
+public class TaskArmstrong {
 	/*
 	 * Armstrong Number in Java: A positive number is called armstrong number if it
 	 * is equal to the sum of cubes of its digits for example: 153 =
