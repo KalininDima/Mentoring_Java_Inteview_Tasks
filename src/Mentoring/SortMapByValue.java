@@ -6,6 +6,8 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class SortMapByValue {
 	public static void main(String[] args) {
@@ -89,6 +91,39 @@ public class SortMapByValue {
 		System.out.println("Non sorted values of map\n" + map);
 		// Sorted values of map
 		System.out.println("Sorted values of map\n" + Linked);
+		
+		System.out.println("===================");
+		
+		int [] listOne = new int[] {1,3,7,11,61,314,5,1,4,14,11};
+		int [] listTwo = new int[] {5,2,2,4,14,0,11,7,0,12,13,1};
+		ArrayList<Integer> NotRepeatsFirst = new ArrayList<>();	
+		ArrayList<Integer> NotRepeatsSecond = new ArrayList<>();
+		
+		for (int i = 0;i<listOne.length;i++) {
+			
+			for (int j =0;j<listTwo.length;j++) {
+				
+				if(listOne[i]==listTwo[j]) {
+				NotRepeatsFirst.add(listOne[i]);
+				
+
+					break;
+				}
+			}
+			
+			
+			
+		}
+		int [] resultOne = new int[NotRepeatsFirst.size()];
+		
+		for (int i =0;i<resultOne.length;i++) {
+			if(!NotRepeatsFirst.contains(listOne[i]))
+			resultOne[i]=NotRepeatsFirst.get(i);
+		}
+		System.out.println(Arrays.toString(resultOne));
+		System.out.println("-------------");
+		System.out.println(listOne+"\n"+listTwo+"\n"+NotRepeatsFirst);
+		System.out.println("==============");
 
 	}
 

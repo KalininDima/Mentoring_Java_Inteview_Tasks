@@ -14,7 +14,7 @@ public class TaskArmstrong {
 	//create the method with int parameters
 	public static void ArmstrongFormula(int Armstrong) {
 		
-		//assign the armstrong value to String str
+		//assign the Armstrong value to String str
 		String str = "" + Armstrong;
 		
 		//create int result, we will save there our results
@@ -30,7 +30,7 @@ public class TaskArmstrong {
 		for (int j = 0; j < str.length(); j++) {
 			
 			//then we are taking int array and assign to value each index of that array, value each index from string array, 
-			//To help us with that (converting from string to int) that parseInt method. Thi is call Un-boxing.
+			//To help us with that (converting from string to int) that parseInt method. This is we call Un-boxing.
 			i[j] = Integer.parseInt(splited[j]);
 		}
 
@@ -40,7 +40,7 @@ public class TaskArmstrong {
 		//create for each int loop using int array
 		for (int each : i) {
 			
-			//addition to int result variable, methematic results, each - its value of each index our int array
+			//addition to int result variable, mathematic results, each - its value of each index our int array
 			//so, we do multiplication 3 times (because the we need value of cube)
 			result += each * each * each;
 			
@@ -50,11 +50,11 @@ public class TaskArmstrong {
 		//creating if statement with condition value with int result is equal with value int Armstrong
 		if (result == Armstrong) {
 			
-			//if yes, printing results of variables and true 
+			//if yes, printing results of variables
 			System.out.println(
 			"Thats Armstrong numbers\n" + "Actual result: " + result + "\n" + "Excpected result: " + Armstrong);
 		}
-		//if not , print result of variables and false
+		//if not , print result of variables
 		else {
 			System.out.println("Thats not Armstrong numbers\n" + "Actual result: " + result + "\n"
 					+ "Excpected result: " + Armstrong);
