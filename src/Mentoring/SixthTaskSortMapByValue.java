@@ -11,22 +11,7 @@ public class SixthTaskSortMapByValue {
 	public static void main(String[] args) {
 
 		
-		int [] i = new int[] {0,0,8,0,5,9,2};
 		
-		int [] R = new int[i.length];
-		int y=0;
-		for (int j =0;j<R.length;j++) {
-			
-			if (i[j]!=0) {
-				R[y]=i[j];
-				y++;
-			
-			
-			}
-		}
-		
-		System.out.println(Arrays.toString(R));
-		System.out.println("========================");
 		/*
 		 * How can we sort Map by value .
 		 */
