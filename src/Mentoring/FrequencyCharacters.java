@@ -24,20 +24,20 @@ public class FrequencyCharacters {
 				//creating if statement and check the one value with all values in same variable, is equal or not
 				if (str.charAt(i) == str.charAt(j)) {
 					
-					//if we found that one value matching with any other values from that variable,
-					//it means that we increasing count variable on 1. Every matching we will increase value of count variable on 1. 
+					//if we found that one value matching with any other values from the variable,
+					//it means that we are increasing count variable on 1. Every matching we will increase value of count variable on 1. 
 					//even if we have one letter A, it means 1 matching.
 					count++;
 				}
 
 			}
 			
-			//when our second loop is finished and we are returning to first loop, where we creating if statement
+			//when our second loop is finished and we are returning to the first loop, where we creating if statement
 			//and then we check our string variable U, doesnt have the letter which we checked before in our second loop.
 			//if its true go inside.
 			if (!U.contains("" + str.charAt(i))) {
 				
-				//assign to String variable U the letter which we checked beffore and
+				//then assign to String variable U the letter which we checked before and
 				//how many times that letter we meet in the main String str. Thats what we saved in count variable
 				U+=" "+str.charAt(i) + count;
 			}
@@ -72,14 +72,14 @@ public class FrequencyCharacters {
 				//then we will use an each as KEY, and add(put command) to that KEY VALUE +1, and VALUE we are taking from that KEY M.get(each) 
 				//means give a value from that key. Value type Integer, add to that value +1
 				M.put(each, M.get(each) + 1);
-				
+			
 				//that happens only once for each key, because our MAP empty in the beginning
 			} else {
 				
 				//if MAP doesnt have the key (which each) we are adding that KEY 
 				//and assigning value to that KEY 1, because at this moment we first time meet that KEY
 				M.put(each, 1);
-			}
+			} 
 
 		}
 		
@@ -90,7 +90,9 @@ public class FrequencyCharacters {
 
 	public static void main(String[] args) {
 
+		//create main string with characters
 		String str = "tqtqettttewfdsfggartw33444YYYY{";
+		//Call both methods
 		FirstWayMethod(str);
 		SecondWayMethod(str);
 

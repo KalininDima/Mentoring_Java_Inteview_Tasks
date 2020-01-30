@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class TaskArmstrong {
 	/*
-	 * Armstrong Number in Java: A positive number is called armstrong number if it
+	 * Armstrong Number in Java: A positive number is called Armstrong number if it
 	 * is equal to the sum of cubes of its digits for example: 153 =
 	 * (1*1*1)+(5*5*5)+(3*3*3)
 	 * Where: (1*1*1)=1 (5*5*5)=125 (3*3*3)=27
