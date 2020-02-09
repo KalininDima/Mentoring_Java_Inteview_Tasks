@@ -61,8 +61,26 @@ public class TaskArmstrong {
 		}
 
 	}
+	
+	public static void Armstring2 (int i) {
+		int temp=i;
+		int i1=0;
+		int a;
+		while (i!=0) {
+			a=i%10;
+			i/=10;
+			i1=i1+(a*a*a);
+		}
+		if(temp==i1) {
+			System.out.println("Yo Armstrong");
+		
+		} else {
+			System.out.println("Huyarsmstrong");
+		}
+	}
 
 	public static void main(String[] args) {
 		ArmstrongFormula(1);
+		Armstring2(153);
 	}
 }
