@@ -7,14 +7,18 @@ import java.util.Scanner;
 public class ReadFile {
     private static Properties properties;
     public static void main(String[] args) throws IOException {
-        FileOutputStream nf = new FileOutputStream("newfile3.txt");
+        FileOutputStream nf = new FileOutputStream("newfile00.txt");
         nf.getChannel();
-        System.out.println("==========");
+
+        System.out.println("1==========");
+
         FileReader fr = new FileReader("file.txt");
         BufferedReader br = new BufferedReader(fr);
         String zeile = br.readLine();
         System.out.println(zeile);
-        System.out.println("==========");
+
+        System.out.println("2==========");
+
         String next = "";
         File mappingsFile = new File("file.txt");
         try {
@@ -25,13 +29,15 @@ public class ReadFile {
             e.printStackTrace();
             next = e.getLocalizedMessage();
         }
-        System.out.println("==========");
+
+        System.out.println("3==========");
+
         String path = "file.txt";
         FileInputStream i = new FileInputStream(path);
         properties = new Properties();
         properties.load(i);
-        System.out.println(i.getChannel());
-        System.out.println("==========");
+        System.out.println(i.read());
+        System.out.println("4==========");
 
     }
 }

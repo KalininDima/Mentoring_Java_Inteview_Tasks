@@ -12,7 +12,7 @@ public class NotTouchSpaces {
 				listofspaces.add(i);
 			}
 		}
-		str= str.replaceAll(" ", "");
+		str=str.replaceAll(" ", "");
 
 		for (int i = str.length() - 1; i >= 0; i--) {
 			for (int l = 0; l < listofspaces.size(); l++) {

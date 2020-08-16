@@ -7,17 +7,17 @@ public class RemoveNameAhmed {
 
 	public static ArrayList<String> Ahmed(ArrayList<String> list) {
 		
-		/*
-		 * list.removeAll( Arrays.asList("Ahmed"));
 
-		 */
-		
+		  list.removeAll( Arrays.asList("Ahmed"));
+
+
+
 	
-		while (list.contains("Ahmed")) {
-
-			list.remove("Ahmed");
-
-		}
+//		while (list.contains("Ahmed")) {
+//
+//			list.remove("Ahmed");
+//
+//		}
 		return list;
 	}
 

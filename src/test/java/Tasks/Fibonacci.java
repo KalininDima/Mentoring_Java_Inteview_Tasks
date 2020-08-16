@@ -4,11 +4,19 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Fibonacci {
+	public static int fiba(int n){
+		if(n<2){
+			return n;
+		} else { return fiba(n-1)+fiba(n-2);
+		}
+	}
 	 public static void main(String[] args) {
 		    Scanner scan = new Scanner(System.in);
 		    int num = scan.nextInt();
 		    fib(num);
-		  }
+		    int n =20;
+		 System.out.println(fiba(n));
+	 }
 		  
 		  public static void fib(int num){
 		    //WRITE YOUR CODE HERE

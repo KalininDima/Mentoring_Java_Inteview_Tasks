@@ -27,7 +27,6 @@ public class ReverseStringAndDigitSeparartly {
 
         String [] arr = newstr.split(",");
         System.out.println(Arrays.toString(arr));
-        System.out.println(Arrays.toString(arr));
         s="";
         for (String each: arr){
             char[] chr = each.toCharArray();

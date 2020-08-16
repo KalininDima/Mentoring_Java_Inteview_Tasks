@@ -1,14 +1,10 @@
 package InterviewQuestions;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class SortArrayWithoutSortMethod {
 
-    public static void SortArray2(){
 
-    }
 
     public static void SortingArray(List<Integer> l) {
 
@@ -31,7 +27,6 @@ public class SortArrayWithoutSortMethod {
         for (int i = 0; i < l.length; i++) {
             for (int j = 0; j < l.length; j++) {
                 if (l[i] > l[j]) {
-
                     int temp = l[j];
                     l[j] = l[i];
                     l[i] = temp;
@@ -44,8 +39,10 @@ public class SortArrayWithoutSortMethod {
     }
 
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList<>(Arrays.asList(12, 2, 5, 8, 3, 4, 1, 9));
+        List<Integer> list = new ArrayList<>(Arrays.asList(12, 2, 5, null,8, 3,null,4, 1, 9));
 //        SortingArray(list);
+
+        ArrayList<String> l = new ArrayList<>(Arrays.asList("Dima","Tural","Sergey","Ruslan"));
 
         int[] arr = {12, 2, 5, 8, 3, 4, 1, 9};
         sorting(arr);

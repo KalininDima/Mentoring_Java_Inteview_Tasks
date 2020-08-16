@@ -7,7 +7,7 @@ import java.lang.reflect.Array;
 import java.nio.Buffer;
 import java.util.*;
 
-public class PractiveClass1 {
+public class PractiveClass1 implements PracticeInterface2,PractiveInterface {
 
     public static void main(String[] args) throws FileNotFoundException {
 
@@ -86,5 +86,9 @@ public class PractiveClass1 {
     }
 
 
+    @Override
+    public void m1() {
+
+    }
 }
 

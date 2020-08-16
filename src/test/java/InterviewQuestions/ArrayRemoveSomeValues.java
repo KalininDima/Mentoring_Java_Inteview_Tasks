@@ -11,14 +11,19 @@ public class ArrayRemoveSomeValues {
 
 	public static ArrayList<Integer> Remove(ArrayList<Integer> list) {
 
-		ArrayList<Integer> list2 = new ArrayList<>();
-		
-		for (int each : list) {
-			if(each<100)
-			list2.add(each);
+//		ArrayList<Integer> list2 = new ArrayList<>();
+//
+//		for (int each : list) {
+//			if(each<100)
+//			list2.add(each);
+//		}
+
+		for(Integer each : list){
+			if(each>100){
+				list.remove(each);
+			}
 		}
-		
-		return list2;
+		return list;
 	}
 
 	public static void main(String[] args) {

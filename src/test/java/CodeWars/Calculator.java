@@ -36,7 +36,8 @@ public class Calculator {
     }
 
     public static void main(String[] args) {
-        System.out.println(calculate(-3.0, "*", 0));
+        //  oooa System.out.println("bugagagaga");
+        System.out.println(calculate(-3.0, "*", 2));
     }
 
 }

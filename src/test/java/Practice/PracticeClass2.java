@@ -4,6 +4,7 @@ package Practice;
 import org.w3c.dom.ls.LSOutput;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 
 public class PracticeClass2 {
@@ -173,14 +174,16 @@ if all requirements above are met, the method returns true, otherwise returns fa
     find max num from array
      */
     public static void T8(int[] arr) {
-        int max = Integer.MIN_VALUE;
+//        int max = Integer.MIN_VALUE;
+//
+//        for (int each : arr) {
+//            if (each > max) {
+//                max = each;
+//            }
+//        }
+        SortedSet<Integer> ss = new TreeSet<Integer>(Arrays.stream(arr).boxed().collect(Collectors.toList()));
 
-        for (int each : arr) {
-            if (each > max) {
-                max = each;
-            }
-        }
-
+        System.out.println(ss.last());
     }
 
     /*
@@ -313,7 +316,7 @@ that, given a positive integer N, prints the consecutive numbers
 three numbers: 2,3 and 5, should be replaced by CodilityTestCoders.
 
      */
-    public static void T17(){
+    public static void T17() {
 
     }
 
@@ -322,7 +325,7 @@ three numbers: 2,3 and 5, should be replaced by CodilityTestCoders.
 Write a java operation to remove all the names named Ahmed
      */
 
-    public static void T18(ArrayList<String>l){
+    public static void T18(ArrayList<String> l) {
 
 //        while(l.contains("Ahmed")){
 //            l.remove("Ahmed");
@@ -340,7 +343,7 @@ Write a java operation to remove all the names named Ahmed
     remove all values greater than 100.
      */
 
-    public static void T19 (ArrayList<Integer> list){
+    public static void T19(ArrayList<Integer> list) {
 
 //    1.    ArrayList<Integer> list2 = new ArrayList<>();
 //        for (Integer i : list) {
@@ -354,8 +357,8 @@ Write a java operation to remove all the names named Ahmed
         //2.
         Iterator<Integer> It = list.iterator();
 
-        while(It.hasNext()){
-            if(It.next()>100){
+        while (It.hasNext()) {
+            if (It.next() > 100) {
                 It.remove();
             }
         }
@@ -370,7 +373,7 @@ Write a java operation to remove all the names named Ahmed
     combinations from the given characters
      */
 
-    public static void T20(){
+    public static void T20() {
 
     }
 
@@ -412,9 +415,74 @@ Write a java operation to remove all the names named Ahmed
         T16(51, 13);
         ArrayList<String> names = new ArrayList<>(Arrays.asList("Ahmed", "John", "Eric", "Ahmed"));
         T18(names);
-        ArrayList<Integer> l = new ArrayList<>(Arrays.asList(4, 3, 2, 67, 7, 7, 7, 78, 12, 333, 414,412,33,3333,44));
+        ArrayList<Integer> l = new ArrayList<>(Arrays.asList(4, 3, 2, 67, 7, 7, 7, 78, 12, 333, 414, 412, 33, 3333, 44));
         T19(l);
 
+
+        long t = System.nanoTime();
+        String s = "String";
+        int i = 12345;
+
+        System.out.println("int  "+i+ " "+(System.nanoTime() - t));
+        System.out.println("String "+s+" "+ (System.nanoTime() - t));
+
+        String x = "techbeamers";
+        String y = new String(new char[] { 't', 'e', 'c', 'h', 'b', 'e', 'a', 'm', 'e', 'r', 's' });
+        System.out.println(x == y);
+        System.out.println(x.equals(y));
+
+
+
+        // S1 referys to Object in the Heap Area
+
+        String s1 = new String("GFG"); // Line-1
+
+        // S2 refers to Object in SCP Area
+        String s2 = s1.intern(); // Line-2
+
+        // Comparing memory locations
+        // s1 is in Heap
+        // s2 is in SCP
+        System.out.println(s1 == s2);
+
+        // Comparing only values
+        System.out.println(s1.equals(s2));
+
+        // S3 refers to Object in the SCP Area
+        String s3 = "GFG"; // Line-3
+
+        System.out.println(s2 == s3);
+
+        StringBuilder sb = new StringBuilder ("top 30 Java String interview questions.");
+
+        System.out.println(sb.length());
+
+        System.out.println(Integer.parseInt("10"));
+
+        String aString = "Fucking String";
+       // String[] strArray = aString.split("\s+");
+
+        String JavaStr = "Are you a Java expert? Yes, you are.";
+        System.out.println(JavaStr.indexOf("?"));
+
+        Scanner in = new Scanner(System.in);
+
+        System.out.println(add(in.nextLine(), in.nextInt(), in.nextInt()));
+
     }
+
+    public static int add(String operator, int a, int b){
+
+        int result=0;
+        if(operator.equals("add")){
+            result = a+b;
+        } else if( operator.equals("subtract")){
+            result=a-b;
+        }
+
+        return result;
+    }
+
+    
 
 }

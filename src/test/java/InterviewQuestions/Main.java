@@ -1,24 +1,21 @@
 package InterviewQuestions;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
 
-class A {
-    public Number getNumber(){
-        return 1;
-    }
-        }
-        class B extends A{
-    public int getNumber(){
-        return 2;
-    }
-        }
-public class Main{
+public class Main {
     public static void main(String[] args) {
+        Number number = 8;
+        Number number2 = 8;
 
-        A a = new B();
-        System.out.println(a.getNumber());
+        System.out.println(number.intValue() + number2.intValue());
+        System.out.println(number);
+        System.out.println(number2);
+        String[] Arr = new String[]{"Dima", "Tural", "Sergey", "Ruslan", "Dima", "Tural", "Sergey", "Ruslan"};
+        Integer[] arr = {5, 4, 3, 321, 4, 5, 623, 2, 3, 4, 4, 5, 66, 6};
+        ArrayList<Integer> list = new ArrayList<Integer>(Arrays.asList(arr.clone()));
+
+
     }
 }
-Collapse

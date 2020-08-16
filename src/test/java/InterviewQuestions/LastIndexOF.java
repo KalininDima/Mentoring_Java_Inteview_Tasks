@@ -12,4 +12,7 @@ public class LastIndexOF {
         IndexIndex1("I like java ",2);
     }
 
+
+
+
 }

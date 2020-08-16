@@ -8,7 +8,6 @@ import java.util.TreeSet;
 public class RemoveDuplicatesArray {
 
     public static void SSA(String [] arr){
-
         SortedSet<String> r = new TreeSet<String>(Arrays.asList(arr.clone()));
         System.out.println(r);
 
